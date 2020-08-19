@@ -59,5 +59,14 @@ public class Books {
         }
     }
 
+    public void remove(){
+        System.out.println("Which book do you want to remove?");
+        Scanner scan = new Scanner();
+        String n = scan.nextLine();
+        list.remove(n);
+
+        System.out.println("The remaining books are:" + /n list);
+    }
+
 }
 

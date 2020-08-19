@@ -11,6 +11,7 @@ public class Main {
 
         Books.add();
         Books.display();
+        Books.remove();
 
     }
 
