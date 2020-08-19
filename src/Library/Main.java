@@ -20,7 +20,9 @@ public class Main {
         Novels novel1 = new Novels();
         novel1.add();
 
+
         Books books1 = new Books();
+        System.out.println();
         books1.remove();
 
     }
