@@ -2,17 +2,27 @@ package Library;
 
 import java.awt.print.Book;
 import java.util.ArrayList;
-
-import static Library.Books.*;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Books.add();
-        Books.display();
-        Books.remove();
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Is the book in paper format? (Yes/No)");
+        String paperFormat = scan.nextLine();
+
+        if(paperFormat.equalsIgnoreCase("yes")) {
+            ArtAlbums artAlbums1 = new ArtAlbums();
+            artAlbums1.add();
+        }
+        Novels novel1 = new Novels();
+        novel1.add();
+
+        Books books1 = new Books();
+        books1.remove();
 
     }
-
 }
+
